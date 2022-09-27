@@ -6,12 +6,19 @@ namespace DeviceManagement_WebApp.Repository
 {
     public interface IGenericRepository<T> where T : class
     {
-        T GetById(int id);
+        T GetById(Guid? id);
         IEnumerable<T> GetAll();
         IEnumerable<T> Find(Expression<Func<T, bool>> expression);
         void Add(T entity);
         void AddRange(IEnumerable<T> entities);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
+
+        //Add method Save to save changes
+        void Save(T entity);
+
+        void Update(T entity);
+
+        bool ZoneExists(Guid? id);
     }
 }
