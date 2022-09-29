@@ -20,3 +20,9 @@ The Device Management web application can be accessed [here](https://devicemanag
 
 Then you will enter your valid email address and create an approapriete password. Ensure that the password is strong (contains atleast one capital letter, a special character and a number).
 
+### 2. Managing the devices
+* After registering/logging into the system - there will be a menu on the left pane for "Zones", "Categories", "Devices" as shown below:
+
+![loggedin](https://user-images.githubusercontent.com/81962930/193032380-6272641f-9343-4bf3-94ac-11c2357de35a.PNG)
+
+* Click the "Zones" button to manage (update, view, delete or create a new instance). The same can be done for both the "Categories" and "Devices".
