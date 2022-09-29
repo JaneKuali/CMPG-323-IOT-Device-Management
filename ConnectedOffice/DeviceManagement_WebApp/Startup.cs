@@ -42,7 +42,9 @@ namespace DeviceManagement_WebApp
             //Applying dependency injection for all entities
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IZoneRepository, ZoneRepository>();
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IDevicesRepository, DevicesRepository>();
         }
 
