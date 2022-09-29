@@ -27,7 +27,7 @@ namespace DeviceManagement_WebApp.Controllers
             return View(_categoryRepository.GetAll());
         }
 
-        // GET: Categories/Details/5
+        // GET: Categories/Details/5 
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
